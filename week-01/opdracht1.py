@@ -1,16 +1,23 @@
 # Oefening 1
 # Print de volgende zin "Hello World"
+world = "Hello world!"
 
-print()
+print(world)
 
 
 # Oefening 2
 # Verander de waarde van de onderstaande variabelen.
 # Print deze daarna 1 voor 1 uit
 
-naam = ""
-leeftijd = 0
-woonstad = ""
+naam = "Habib"
+leeftijd = 26
+woonstad = "Nieuwegein"
+
+print(f"Mijn naam is: {naam}")
+print(f"mijn leeftijd is: {leeftijd}")
+print(f"Mijn woonplaats is {woonstad}")
+
+
 
 
 # Oefening 3
@@ -22,6 +29,7 @@ woonstad = ""
 # Oefening 4
 # Maak variabelen aan voor je favoriete game, hoe veel uur je deze hebt gespeeld en welk cijfer je dit spel zou geven
 # Print deze daarna in zinnen uit, bijvoorbeeld "Mijn favoriete game is Minecraft" "Ik heb deze game 150 uur gespeeld", "Ik geef deze game een 8.5"
+
 
 
 
