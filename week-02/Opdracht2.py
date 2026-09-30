@@ -11,8 +11,15 @@
 #   Print dan: "Je bent nog geen 18."
 #
 # Test je programma daarna met verschillende waardes voor age.
+print("============================================================================================================")
 
+age = 26
+if age >= 18:
+    print("je bent volwassen.")
+else:
+    print("Je bent minderjarig")
 
+print("============================================================================================================")
 
 # Opdracht 2 - Voldoende of onvoldoende
 #
@@ -28,8 +35,15 @@
 #   Print: "Je hebt een onvoldoende."
 #
 # Test je programma met verschillende cijfers.
+print("============================================================================================================")
 
+grade = 7.9
+if grade >= 5.5:
+    print("je hebt een voldoende!")
+else:
+    print("Je hebt helaas een onvoldoende.")
 
+print("============================================================================================================")
 
 # Opdracht 3 - Cijfer beoordelen
 #
@@ -50,8 +64,19 @@
 # 4
 # 6
 # 9
+print("============================================================================================================")
 
+grade = 8
+if grade >= 5.5:
+    print("Voldoende")
 
+elif grade >= 8:
+    print("Goed gedaan!")
+
+else:
+    print("Onvoldoende.")
+
+print("============================================================================================================")
 
 # Opdracht 4 - Game Character
 #
@@ -72,8 +97,18 @@
 #
 # Als dit zo is:
 # Print "Je hebt een schild!"
+print("============================================================================================================")
 
+health = 75
+has_shield = True
+if health >=50:
+    print("Je hebt genoeg health.")
+else:
+    print("Je hebt te weinig health.")
+if has_shield:
+    print("Je hebt een shield.")
 
+print("============================================================================================================")
 
 # Opdracht 5 - Mag je naar binnen?
 #
@@ -96,8 +131,18 @@
 # Print "Je mag niet naar binnen."
 #
 # Test daarna wat er gebeurt als je de waardes verandert.
+print("============================================================================================================")
 
+age = 20
+has_ticket =True
+if age >= 18:
+    print("Je bent 18 jaar of ouder, je mag naar binnen! ")
+else:
+    print("Je mag niet naar binnen.")
+if has_ticket:
+    print("Je hebt een ticket!")
 
+print("============================================================================================================")
 
 # Opdracht 6 - Tellen
 #
@@ -113,8 +158,12 @@
 # 10
 #
 # Gebruik hiervoor range().
+print("============================================================================================================")
 
+for i in range(1,11):
+    print(i)
 
+print("============================================================================================================")
 
 # Opdracht 7 - Tafel van 5
 #
@@ -130,9 +179,12 @@
 #
 # Gebruik de variabele uit je for-loop
 # om de berekening te maken.
+print("============================================================================================================")
 
+for i in range(1,11):
+    print(i, "x 5 =" , i *5)
 
-
+print("============================================================================================================")
 # Opdracht 8 - Countdown
 #
 # Maak een variabele:
@@ -157,9 +209,15 @@
 # 2
 # 1
 # GO!
+print("============================================================================================================")
 
+countdown = 10
+while countdown > 0:
+    print(countdown)
+    countdown -= 1
+print("Go") 
 
-
+print("============================================================================================================")
 # Opdracht 9 - Health verliezen
 #
 # Maak een variabele:
@@ -179,8 +237,15 @@
 # Health: 40
 # Health: 20
 # Health: 0
+print("============================================================================================================")
 
+health = 100
 
+for i in range(5):
+    health -= 20
+    print("Health:", health)
+
+print("============================================================================================================")
 
 # Opdracht 10 - Even of oneven
 #
@@ -203,9 +268,15 @@
 #
 # Bijvoorbeeld:
 # 4 % 2 == 0
+print("============================================================================================================")
 
+for i in range(1,11):
+    if i % 2 == 0:
+        print(i, "is even")
+    else:
+        print(i, "is oneven")
 
-
+print("============================================================================================================")
 # Opdracht 11 - Vijanden verslaan - BONUS
 #
 # De speler moet 5 vijanden verslaan.
@@ -228,7 +299,18 @@
 # Print "Vijand verslagen!"
 #
 # Daarna begint de volgende vijand.
+print("============================================================================================================")
 
+for i in range(5):
+    enemy_health = 30
+
+    while enemy_health > 0:
+        enemy_health -=10
+        print("Enemy health:", enemy_health)
+
+    print("vijand verslagen!")
+
+print("============================================================================================================")
 
 
 # Eindopdracht - Player Training - BONUS
@@ -268,3 +350,28 @@
 # Voeg health en damage toe aan je speler.
 # Iedere keer dat de speler een level omhoog gaat,
 # krijgt hij 5 extra damage.
+print("============================================================================================================")
+player_name = "Steve"
+level = 1
+experience = 0
+health = 100
+damage = 10
+
+for i in range(10):
+    experience += 20
+
+    print(f"{player_name} heeft nu {experience} experience")
+
+    if experience >= 100:
+        level += 1
+        experience = 0
+        damage += 5
+
+        print("LEVEL UP!")
+        print(f"Damage verhoogd naar {damage}")
+
+print("Training voltooid!")
+print(f"level: {level}")
+print(f"Experience: {experience}")
+print(f"Health: {health}")
+print(f"Damage: {damage}")
